@@ -13,7 +13,6 @@ Citizen.CreateThread(function()
 	while true do
 		SetBlackout(false)
 		Citizen.Wait( 1 )
-		-- check if player is already in first person
 		if IsPlayerFreeAiming(PlayerId()) then
 		    if GetFollowPedCamViewMode() == 4 and check == false then
 			    check = false
@@ -34,7 +33,6 @@ end )
 
 Citizen.CreateThread(function()
 	while true do
-		-- Wait 5 seconds after player has loaded in and trigger the event.
 		SetBlackout(false)
 		Citizen.Wait( 1 )
 		
